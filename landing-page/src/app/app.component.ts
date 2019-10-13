@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'landing-page';
+
+  constructor() {
+    library.add(faFacebook, faInstagram, faTwitter);
+  }
 }
