@@ -1,7 +1,26 @@
-.container-team-page{
-    .section {
-        padding: 50px 5px;
-        height: 100vh;
-        width: 100%;
+.container-team-page {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding: 15px 5px;
+    text-align: center;
+  }
+
+  .section {
+    height: auto;
+    width: 100%;
+
+    .container-collaborators {
+      width: 85%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
+  }
 }

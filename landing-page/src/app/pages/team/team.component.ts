@@ -20,6 +20,69 @@ export class TeamComponent implements OnInit {
   collaborators: Person[] = [
     {
       personId: 1,
+      fullname: 'Andrea N. Tlaxcalteca',
+      picture: '../../../assets/images/team/collaborators/s500_AndreaTl.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 2,
+      fullname: 'Angel Plascencia',
+      picture: '../../../assets/images/team/collaborators/s500_AngelPl.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 3,
+      fullname: 'Araxie Molina',
+      picture: '../../../assets/images/team/collaborators/s500_AraxieMo.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 4,
+      fullname: 'Cristobal Baez',
+      picture: '../../../assets/images/team/collaborators/s500_CristobalBa.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 5,
+      fullname: 'Emilio Tlaxcalteca',
+      picture: '../../../assets/images/team/collaborators/s500_EmilioTl.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 6,
+      fullname: 'Gema Cortés',
+      picture: '../../../assets/images/team/collaborators/s500_gemaCo.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 7,
+      fullname: 'Jessica Ojeda',
+      picture: '../../../assets/images/team/collaborators/s500_JessicaOj.png',
+      career: '',
+      coriousFact: '',
+      igem: '',
+      phrase: ''
+    },
+    {
+      personId: 8,
       fullname: 'Damian Zamora',
       picture: '../../../assets/images/team/collaborators/photo-profile.jpg',
       career: 'Computer System Engineer',
@@ -28,7 +91,7 @@ export class TeamComponent implements OnInit {
       phrase: 'If you dream it, it will be possible'
     },
     {
-      personId: 2,
+      personId: 9,
       fullname: 'Julio Peréz',
       picture: '../../../assets/images/team/collaborators/photo-profile-julio.jpg',
       career: 'Computer System Engineer',

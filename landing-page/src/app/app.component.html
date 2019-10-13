@@ -1,48 +1,50 @@
-<nav class="navbar">
+<div class="container-navbar">
+    <nav class="navbar">
 
-    <h2>PLASTI<span>CO<span>2</span></span></h2>
+        <h2>PLASTI<span>CO<span>2</span></span></h2>
 
-    <label for="menu-hamburger">&#9776;</label>
-    <input type="checkbox" id="menu-hamburger">
+        <label for="menu-hamburger">&#9776;</label>
+        <input type="checkbox" id="menu-hamburger">
 
-    <ul class="menu">
-        <li>
-            <a>Team <span>▼</span></a>
-            <ul class="sub-menu">
-                <li><a routerLink="/team">Team</a></li>
-                <li><a href="#">Attributions</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </li>
-        <li>
-            <a>Project <span>▼</span></a>
-            <ul class="sub-menu">
-                <li><a routerLink="/description">Description</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Experiments</a></li>
-                <li><a href="#">Model</a></li>
-                <li><a href="#">Graphic Design</a></li>
-            </ul>
-        </li>
-        <li>
-            <a>Parts <span>▼</span></a>
-            <ul class="sub-menu">
-                <li><a href="#">Parts</a></li>
-                <li><a href="#">Part Collection</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Safety</a></li>
-        <li>
-            <a>Human Practices <span>▼</span></a>
-            <ul class="sub-menu">
-                <li><a href="#">Human Practices</a></li>
-                <li><a href="#">Human Practices</a></li>
-                <li><a href="#">Public Engagement</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+        <ul class="menu">
+            <li>
+                <a>Team <span>▼</span></a>
+                <ul class="sub-menu">
+                    <li><a routerLink="/team">Team</a></li>
+                    <li><a href="#">Attributions</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Project <span>▼</span></a>
+                <ul class="sub-menu">
+                    <li><a routerLink="/description">Description</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Experiments</a></li>
+                    <li><a href="#">Model</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Parts <span>▼</span></a>
+                <ul class="sub-menu">
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Part Collection</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Safety</a></li>
+            <li>
+                <a>Human Practices <span>▼</span></a>
+                <ul class="sub-menu">
+                    <li><a href="#">Human Practices</a></li>
+                    <li><a href="#">Human Practices</a></li>
+                    <li><a href="#">Public Engagement</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <router-outlet></router-outlet>
 
@@ -64,9 +66,15 @@
         </div>
         <div class="social-media">
             <ul>
-                <li> <fa-icon [icon]="['fab', 'facebook']"></fa-icon></li>
-                <li> <fa-icon [icon]="['fab', 'instagram']"></fa-icon></li>
-                <li> <fa-icon [icon]="['fab', 'twitter']"></fa-icon></li>
+                <li>
+                    <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+                </li>
+                <li>
+                    <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+                </li>
+                <li>
+                    <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+                </li>
             </ul>
         </div>
     </div>

@@ -3,7 +3,6 @@
 .container-description {
   font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
-  padding: 45px 0;
 
   .section {
     width: 100%;
@@ -16,8 +15,6 @@
     &.section-1 {
       height: 100vh;
       color: #fff;
-
-      //background
       background-image: url("../../../assets/images/description/materia-organica.jpg");
       background-position: center;
       background-repeat: no-repeat;

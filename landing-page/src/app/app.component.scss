@@ -1,93 +1,98 @@
 @import '../variables.scss';
 
-nav {
-  z-index: 1000;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  height: 45px;
+.container-navbar {
   width: 100%;
-  background: $primary-color;
-  border-bottom: 2px solid rgb(108, 149, 211);
+  height: 45px;
 
-  h2 {
-    margin: 0 25px;
-    letter-spacing: 2px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-
-    span {
-      color: rgb(87, 168, 223);
-
-      span {
-        font-size: 16px;
-      }
-    }
-  }
-
-  #menu-hamburger,
-  label {
-    display: none;
-  }
-
-  ul {
+  nav {
+    z-index: 1000;
+    position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 45px;
+    width: 100%;
+    background: $primary-color;
+    border-bottom: 2px solid rgb(108, 149, 211);
 
-    > li {
-      position: relative;
-      display: inline-block;
-      padding: 10px 5px;
-      box-sizing: border-box;
-      width: 160px;
+    h2 {
+      margin: 0 25px;
+      letter-spacing: 2px;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
 
-      a {
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        height: 100%;
+      span {
+        color: rgb(87, 168, 223);
 
         span {
-          font-size: 8px;
+          font-size: 16px;
         }
       }
-
-      .sub-menu {
-        background-color: $primary-color;
-        position: absolute;
-        width: 100%;
-        top: 38px;
-        left: 0;
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1.5s;
-
-        > li:hover {
-          background-color: $primary-color-light;
-        }
-      }
-
     }
 
-    > li:hover {
-      background-color: $primary-color-light;
-      transition: 600ms;
-      -webkit-transition: 600ms;
-      cursor: pointer;
+    #menu-hamburger,
+    label {
+      display: none;
     }
 
-    :hover .sub-menu {
-      visibility: visible;
+    ul {
       display: flex;
-      flex-direction: column;
-      opacity: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+
+      > li {
+        position: relative;
+        display: inline-block;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        width: 160px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          height: 100%;
+
+          span {
+            font-size: 8px;
+          }
+        }
+
+        .sub-menu {
+          background-color: $primary-color;
+          position: absolute;
+          width: 100%;
+          top: 38px;
+          left: 0;
+          display: none;
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity 1.5s;
+
+          > li:hover {
+            background-color: $primary-color-light;
+          }
+        }
+
+      }
+
+      > li:hover {
+        background-color: $primary-color-light;
+        transition: 600ms;
+        -webkit-transition: 600ms;
+        cursor: pointer;
+      }
+
+      :hover .sub-menu {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+      }
     }
   }
 }
@@ -156,7 +161,7 @@ nav {
             color: #fff;
           }
 
-          :hover{
+          :hover {
             font-weight: bold;
             border-bottom: 1px solid #fff;
             cursor: pointer;
@@ -165,13 +170,13 @@ nav {
       }
     }
 
-    .social-media{
+    .social-media {
       width: 60%;
       height: 20%;
       // border: 1px solid green;
       margin: 0 auto;
 
-      ul{
+      ul {
         margin: auto;
         width: 40%;
         list-style: none;
@@ -179,8 +184,9 @@ nav {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        li{
-          fa-icon{
+
+        li {
+          fa-icon {
             color: #fff;
           }
         }
@@ -188,7 +194,6 @@ nav {
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -225,14 +230,17 @@ nav {
     }
   }
 
-  .footer{
+  .footer {
     height: 50vh;
-    .content-footer{
-      .menu{
+
+    .content-footer {
+      .menu {
         height: auto;
-        ul{
+
+        ul {
           flex-direction: column;
-          li{
+
+          li {
             margin: 10px 0;
           }
         }
@@ -240,8 +248,7 @@ nav {
     }
   }
 }
-
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
   .navbar {
     margin: auto;
     height: 100px;
