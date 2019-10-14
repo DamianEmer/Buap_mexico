@@ -1,0 +1,152 @@
+.container-design-page {
+  .section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 75%;
+      height: 90%;
+      padding: 5% 0;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        width: 60%;
+        letter-spacing: 1px;
+        border-bottom: 2px solid rgb(48, 48, 48);
+        text-align: start;
+        margin-bottom: 5px;
+      }
+
+      p {
+        text-align: justify;
+        margin: 10px 0;
+        font-size: 17px;
+        line-height: 1.3em;
+      }
+
+      img {
+        width: 75%;
+        margin: 15px auto;
+      }
+    }
+
+    &-1 {
+      height: 60vh;
+      justify-content: center;
+      align-items: center;
+      background-image: url("../../../assets/images/description/materia-organica.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .container-section-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h1 {
+          width: 50%;
+          text-align: start;
+          color: #fff;
+          font-size: 100px;
+          letter-spacing: 5px;
+          border-bottom: 10px solid rgb(255, 255, 255);
+          transition: font-size 12s;
+          -webkit-transition: font-size 2s;
+        }
+
+        p {
+          width: 100%;
+          font-size: 1.5em;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// Design for medium devices
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .container-design-page {
+    .section {
+      &-1 {
+        height: calc(100vh - 45px);
+        padding: 0;
+        background-size: auto;
+
+        .container-section-1 {
+          justify-content: center;
+          align-items: center;
+
+          p {
+            color: #fff;
+            margin: 25px 0;
+            font-size: 1.2em;
+          }
+
+          h1 {
+            width: 100%;
+            text-align: center;
+            border-bottom: 5px solid #fff;
+            letter-spacing: 0;
+            font-size: 3.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Design for small devices
+@media screen and (max-width: 420px) {
+  .container-design-page {
+    .section {
+      height: auto;
+      padding: 5% 0;
+
+      .container {
+        width: 85%;
+
+        p {
+          text-align: justify;
+          margin: 15px 0;
+        }
+
+        img {
+          margin: 12px 0;
+          margin: 10px auto;
+        }
+      }
+
+      &-1 {
+        height: calc(100vh - 45px);
+        padding: 0;
+        background-size: auto;
+
+        .container-section-1 {
+          justify-content: center;
+          align-items: center;
+
+          p {
+            color: #fff;
+            margin: 25px 0;
+            font-size: 1.2em;
+          }
+
+          h1 {
+            width: 100%;
+            text-align: center;
+            border-bottom: 5px solid #fff;
+            letter-spacing: 0;
+            font-size: 3.2em;
+          }
+        }
+      }
+    }
+  }
+}
