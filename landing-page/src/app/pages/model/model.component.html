@@ -1,0 +1,169 @@
+<div class="container-model-page">
+    <section class="section section-1">
+        <div class="container container-section-1">
+            <h1>MODEL</h1>
+        </div>
+    </section>
+
+    <section class="section section-2">
+        <div class="container container-section-2">
+            <h2>Theoretical foundation: Toggle Switch</h2>
+            <div class="container-paragraph">
+                The Toggle switch is one of the synthetic gene-regulatory network designed by Gardner, Cantor and
+                collins at the beginning of 2000. This network was constructed using two repressors and two constitutive
+                promoters and each promoter is inhibited by the repressor that is transcribed by the opposing promoter.
+                Toggle switch shows bistability over a wide range of parameter values, this bistability arises from the
+                mutually inhibitory arrangement of the genes repressors. In absence of inducers, two states are
+                possible:
+            </div>
+
+            <div class="container-paragraph">
+                <ul>
+                    <li>First one: The promoter 1 transcribes repressor 2</li>
+                    <li>Second one: The promoter 2 transcribes repressor 1</li>
+                </ul>
+            </div>
+
+            <div class="container-paragraph">
+                Switching is activated introducing an inducer in the environment which inactivate one of the currently
+                active repressor. The inducer allows the opposing repressor to be maximally transcribed until it stably
+                represses the originally active promoter.
+            </div>
+
+            <!-- <img src="" alt=""> -->
+
+            <div class="container-paragraph">
+                Theoretically toggle design does not require any specialized promoters, whit this in mind we decided to
+                use the Pyruvate Dehydrogenase Complex (pdh) promoter containing a site which is recognized by RNA
+                polymerase and a binding site for pdh repressive protein combined with arcA gene and the ompW promoter
+                containing a binding site for RNA polymerase and ArcA repressive protein combined with pdhR gene.
+            </div>
+
+            <div class="container-paragraph">
+                The inducer to pdhR is the pyruvate and the inducer to arcA is the aerobic condition, in which arcB
+                loses its kinase activity allowing the dephosphorylation of ArcA inactivating this protein and leading
+                the gene expression.
+            </div>
+
+            <div class="container-paragraph">
+                Furthermore curiously, in many bacteria the ArcA protein is activated not only in anaerobic conditions
+                then is activated by the addition of H2O2 to the environment showing a response to oxidative stress, but
+                this phenomenon have not been demonstrated in E. coli.
+            </div>
+
+            <!-- <img src="" alt=""> -->
+
+        </div>
+    </section>
+
+    <section class="section section-3">
+        <div class="container container-section-3">
+            <h2>Modeling</h2>
+
+            <div class="container-paragraph">
+                First, we are going to define the variables that we’ll use along the equations:
+                <ul>
+                    <li>
+                        <span>Ktranscription</span>(constant rate of transcription from DNA to mRNA)
+                    </li>
+                    <li>
+                        <span>Ktranslation </span> (constant rate of translation from mRNA to protein)
+                    </li>
+                    <li>
+                        <span>γm</span>(constant rate of degradation of mRNA)
+                    </li>
+                    <li>
+                        <span> γp </span> (constant rate of degradation of protein)
+                    </li>
+                    <li>
+                        <span> KR</span>(dissociation constant for a repressor)
+                    </li>
+                    <li>
+                        <span> KI </span>(dissociation constant for an inducer)
+                    </li>
+                    <li>
+                        <span> N</span>(Hill coefficient for a repressor)
+                    </li>
+                    <li>
+                        <span> M</span>(Hill coeffcient for an inducer)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-formulates">
+                <div class="container-paragraph-formulate">
+                    Thus, by mass action law, we have the following relations
+                </div>
+
+                <!-- <img src="" alt=""> -->
+
+                <div class="container-paragraph-formulate">
+                    In order to add the dynamics of repressors and inducers, we are going to use the Hill’s equation.
+                    So, we can consider that n molecules from a ligand molecule (B) are going to interact with one
+                    receptor molecule (A). So, we can write the following relation
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    Then, by chemical equilibrium,
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    Moreover, we can assume a constant number of receptors in order to notice that
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    By equations (3) and (4),
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    For hence,
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    The equation (5) is also known as Hill´s equation. So, putting together the equations (1) and (5),
+                    we should obtain the equation (6).
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    Now, we can define the final variables for our toggle switch
+                    <ul>
+                        <li><span>KpdhR</span>(dissociation constant for pdhR repressor)</li>
+                        <li><span>KArcA</span>(dissociation constant for ArcA repressor)
+                        </li>
+                        <li><span>Kpyruvate</span>(dissociation constant for pyruvate inducer)</li>
+                        <li><span>Koxygen</span>(dissociation constant for oxygen inducer)</li>
+                    </ul>
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    In order to obtain the final equations of toggle switch
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-4">
+        <div class="container container-section-4">
+            <h2>References</h2>
+            <ol class="container-references">
+                <li>Quail, M. A and Guest, J. R. (1994). The pdhR-aceEF-lpd operon of Escherichia coii expresses the
+                    pyruvate dehydrogenase complex. Molecular Microbioiogy (Vol.12, pp. 95-104).
+                </li>
+                <li>Gardner, Timothy S., Cantor, Charles R & Collins, James J. (2000). Construction of a genetic toggle
+                    switch in Escherichia coli. Nature (Vol. 403, pp. 339 -342).
+                </li>
+                <li>Xiao, Minfeng., Lai, Yong., Sun, Jian., Chen, Guanhua and Yan, Aixin. (2016). Transcriptional
+                    Regulation of the Outer Membrane Porin Gene ompW Reveals its Physiological Role during the
+                    Transition from the Aerobic to the Anaerobic Lifestyle of Escherichia coli. Frontiers in
+                    Microbiology. (Vol. 7, pp. 1-8).
+                </li>
+                <li>Santillan, M. (2008). On the use of the Hill Functions in Mathematical Models of gene regulatory
+                    networks. Mathematical Modelling of Natural Phenomena. (Vol. 3, pp. 85-97).
+                </li>
+                <li>O’Laughlin, Ricky and Csicsery, Nick. (2013). A mathematical model of a synthetically constructed
+                    genetic toggle switch. Mathematical methods in bioengineering.
+                </li>
+            </ol>
+        </div>
+    </section>
+</div>
