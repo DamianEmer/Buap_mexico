@@ -12,6 +12,8 @@
       justify-content: flex-start;
       // align-items: center;
       padding: 150px 50px;
+      background-image: url("../../../assets/images/general/menuImage.svg");
+      background-repeat: no-repeat;
 
       h1 {
         // font-family: $cabin-bold !important;
@@ -29,7 +31,7 @@
         }
       }
 
-      h2{
+      h2 {
         color: rgb(87, 168, 223);
         margin: 10px;
         font-weight: 500;
@@ -43,8 +45,8 @@
       align-items: center;
       height: 100vh;
       // background-color: #ddd;
-      background: rgb(45,119,148);
-      background: linear-gradient(0deg, rgba(45,119,148,1) 0%, rgba(174,206,212,1) 56%, rgba(222,222,222,1) 100%);
+      background: rgb(45, 119, 148);
+      background: linear-gradient(0deg, rgba(45, 119, 148, 1) 0%, rgba(174, 206, 212, 1) 56%, rgba(222, 222, 222, 1) 100%);
 
       .central-info {
         width: 80%;
@@ -135,7 +137,7 @@
             height: 100%;
 
             .card {
-          
+
               &-1 {
                 display: flex;
                 flex-direction: column;
@@ -143,13 +145,13 @@
                 width: 90%;
                 height: 33%;
                 box-shadow: 5px 5px 5px rgb(155, 155, 155);
-  
+
                 img {
                   margin: 10px;
                   width: 85%;
                   height: 45%;
                 }
-  
+
                 .text {
                   margin: 15px 5px;
                   text-align: center;
@@ -164,11 +166,11 @@
 
 }
 
-@media screen and (min-width: 1920px){
-  .container-home{
-    .section{
-      &-1{
-        h1{
+@media screen and (min-width: 1920px) {
+  .container-home {
+    .section {
+      &-1 {
+        h1 {
           font-size: 250px;
         }
       }
