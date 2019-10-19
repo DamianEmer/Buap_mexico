@@ -1,0 +1,114 @@
+.container-model-page {
+  .section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 75%;
+      height: 90%;
+      padding: 5% 0;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        width: 60%;
+        letter-spacing: 1px;
+        border-bottom: 2px solid rgb(48, 48, 48);
+        text-align: start;
+        margin-bottom: 5px;
+      }
+
+      .container-paragraph {
+        text-align: justify;
+        margin: 10px 0;
+        font-size: 17px;
+        line-height: 1.3em;
+      }
+    }
+
+    &.section-1 {
+      height: 60vh;
+      background-image: url("../../../assets/images/description/materia-organica.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .container-section-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h1 {
+          width: 50%;
+          text-align: start;
+          color: #fff;
+          font-size: 100px;
+          letter-spacing: 5px;
+          border-bottom: 10px solid rgb(255, 255, 255);
+          transition: font-size 12s;
+          -webkit-transition: font-size 2s;
+        }
+      }
+    }
+
+    &.section-2 {
+      height: 100vh;
+
+      ul {
+        margin-left: 45px;
+
+        li {
+          margin: 5px 0;
+
+          span {
+            font-family: cursive;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &.section-3 {
+      .container-paragraph {
+        ul {
+          margin-left: 45px;
+
+          li {
+            margin: 5px 0;
+
+            span {
+              font-family: cursive;
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+
+      .container-formulates {
+        .container-paragraph-formulate {
+          text-align: justify;
+          margin: 10px 0;
+          font-size: 17px;
+          line-height: 1.3em;
+
+          ul {
+            margin-left: 45px;
+
+            li {
+              margin: 5px 0;
+
+              span {
+                font-family: cursive;
+                margin: 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
