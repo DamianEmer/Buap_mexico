@@ -26,6 +26,26 @@ const routes: Routes = [
     {
         path: 'model',
         loadChildren: () => import('./pages/model/model.module').then(m => m.ModelModule)
+    },
+    {
+        path: 'attributions',
+        loadChildren: () => import('./pages/attribution/attribution.module').then(m => m.AttributionModule)
+    },
+    {
+        path: 'collaborations',
+        loadChildren: () => import('./pages/collaboration/collaboration.module').then(m => m.CollaborationModule)
+    },
+    {
+        path: 'parts',
+        loadChildren: () => import('./pages/parts/parts.module').then(m => m.PartsModule)
+    },
+    {
+        path: 'public-engagement',
+        loadChildren: () => import('./pages/public-engagement/public-engagement.module').then(m => m.PublicEngagementModule)
+    },
+    {
+        path: 'safety',
+        loadChildren: () => import('./pages/safety/safety.module').then(m => m.SafetyModule)
     }
 ]
 
