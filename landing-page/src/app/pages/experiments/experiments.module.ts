@@ -1,28 +1,27 @@
 import { NgModule } from '@angular/core';
-import { PartsComponent } from './parts.component';
+import { ExperimentsComponent } from './experiments.component';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { MatTableModule } from '@angular/material/table';
-
+import { MatListModule } from '@angular/material/list';
 
 const routes: Routes = [
-    { path: '', component: PartsComponent }
+    { path: '', component: ExperimentsComponent }
 ]
 
 @NgModule({
     declarations: [
-        PartsComponent
+        ExperimentsComponent
     ],
     imports: [
         CommonModule,
-        MatTableModule,
+        MatListModule,
         RouterModule.forChild(routes)
     ],
     exports: [
-        PartsComponent
+        ExperimentsComponent
     ]
 })
 
-export class PartsModule {
+export class ExperimentsModule {
 
 }
