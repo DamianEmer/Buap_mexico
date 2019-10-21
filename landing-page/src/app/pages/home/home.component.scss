@@ -1,0 +1,211 @@
+@import '../../../variables.scss';
+
+.container-home {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 90%;
+      padding: 5% 0;
+    }
+
+    &-1 {
+      font-family: 'Courier New', Courier, monospace;
+      height: 100vh;
+      color: #fff;
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 150px 50px;
+      background-image: url("../../../assets/images/general/menuImage.svg");
+      background-repeat: no-repeat;
+
+      h1 {
+        font-size: 90px;
+        letter-spacing: 5px;
+        transition: font-size 12s;
+        -webkit-transition: font-size 2s;
+
+        span {
+          color: rgb(87, 168, 223);
+
+          span {
+            font-size: 40px;
+          }
+        }
+      }
+
+      h2 {
+        color: rgb(87, 168, 223);
+        margin: 10px;
+        font-weight: 500;
+        font-family: italic;
+      }
+    }
+
+    &-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      // background-color: #ddd;
+      background: rgb(45, 119, 148);
+      background: linear-gradient(0deg, rgba(45, 119, 148, 1) 0%, rgba(174, 206, 212, 1) 56%, rgba(222, 222, 222, 1) 100%);
+
+      .container-section-2 {
+        .paragraph {
+          text-align: justify;
+          font-size: 17px;
+          margin: 15px 0;
+          font-family: 'Noto Sans', sans-serif;
+
+          &-3,
+          &-6 {
+            margin-left: 25px;
+          }
+
+          &-5 {
+            align-self: flex-end;
+            width: 65%;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #cecee2;
+            box-shadow: 5px 5px 15px rgb(119, 119, 119);
+
+            .wrapped-paragraph {
+              font-size: 24px;
+              text-align: end;
+              margin-top: 50px;
+              padding: 8px;
+              border-bottom: 2px solid rgb(39, 39, 39);
+              border-right: 2px solid rgb(39, 39, 39);
+            }
+          }
+        }
+      }
+    }
+
+    &-3 {
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Noto Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          width: 100%;
+          text-align: center;
+          font-size: 35px;
+        }
+
+        .content-cards {
+          // border: 1px solid black;
+          min-height: 500px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+
+          .card {
+            &-1 {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 30%;
+              height: 95%;
+              box-shadow: 5px 5px 5px rgb(155, 155, 155);
+
+              img {
+                margin: 10px;
+                width: 85%;
+                height: 45%;
+              }
+
+              .text {
+                margin: 15px 5px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-home {
+    .section {
+      &-1 {
+        h1 {
+          font-size: 50px;
+        }
+      }
+
+      &-3 {
+        height: 150vh;
+
+        .content {
+          height: 95%;
+
+          .content-cards {
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+
+            .card {
+
+              &-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                height: 33%;
+                box-shadow: 5px 5px 5px rgb(155, 155, 155);
+
+                img {
+                  margin: 10px;
+                  width: 85%;
+                  height: 45%;
+                }
+
+                .text {
+                  margin: 15px 5px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  .container-home {
+    .section {
+      &-1 {
+        h1 {
+          font-size: 250px;
+        }
+      }
+    }
+  }
+}

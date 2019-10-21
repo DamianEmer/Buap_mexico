@@ -1,0 +1,46 @@
+.container-collaboration-page {
+  h1 {
+    text-align: center;
+    margin: 15px;
+  }
+
+  .section {
+    height: auto;
+    width: 1005;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container {
+      width: 75%;
+      height: 100%;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .collaborator {
+        background-color: #e9e9e9;
+        border-radius: 10px;
+        width: 70%;
+        padding: 8px;
+        margin: 15px 5px;
+
+        h2 {
+          text-align: start;
+          margin-left: 15px;
+        }
+
+        .paragraph {
+          margin: 5px 0;
+          font-size: 16px;
+          line-height: 1.3em;
+        }
+
+        &-2 {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

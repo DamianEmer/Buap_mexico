@@ -1,0 +1,104 @@
+<div class="container-parts-page">
+    <section class="section section-1">
+        <div class="container container-section-1">
+            <table mat-table [dataSource]="dataParts">
+                <ng-container matColumnDef="number">
+                    <th mat-header-cell *matHeaderCellDef>Number</th>
+                    <td mat-cell *matCellDef="let element">{{element.number}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef>Name</th>
+                    <td mat-cell *matCellDef="let element">{{element.name}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="length">
+                    <th mat-header-cell *matHeaderCellDef>Length</th>
+                    <td mat-cell *matCellDef="let element">{{element.length}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="organism">
+                    <th mat-header-cell *matHeaderCellDef>Organism</th>
+                    <td mat-cell *matCellDef="let element">{{element.organism}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="section section-2">
+        <div class="container container-section-2">
+            <h2>New basic parts (contribution)</h2>
+            <h3>BBa_K3238000 Pdh promoter (60 bp)</h3>
+            <div class="paragraph">
+                The pyruvate dehydrogenase complex (pdh) operon from E. coli, is regulated by a promoter (pdhP) composed
+                by the polymerases binding site. Also this promoter contain a protein repressor (pdhR) binding site
+                which allows the downstream regulation of this operon.
+            </div>
+            <h3>BBa_K3238001 PdhR (687 bp)</h3>
+            <!-- <img src="" alt=""> -->
+            <div class="paragraph">
+                The pyruvate dehydrogenase complex operon repressor protein (pdhR) is a protein which avoid the
+                expression of this operon when there is not pyruvate in the environment. Pyruvate acts like an inductor,
+                when this molecule is present bind to pdhR shaping the pdhR-pyruvate complex which repress the pdhR
+                function allowing the transcription process.
+            </div>
+            <h3>BBa_K3238002 ArcA (717 bp)</h3>
+            <!-- <img src="" alt=""> -->
+            <div class="paragraph">
+                The Aerobic respiration control protein A (ArcA) from E. coli, represses a wide variety of aerobic
+                enzymes under anaerobic conditions mediated by the ArcB protein. Under Anaerobic conditions ArcA is
+                activated by ArcB phosphorylase activity, repressing the activity of its targets. Under Aerobic
+                conditions ArcA is dephosphorylated losing its repressive activity which allows the gene transcription.
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-3">
+        <div class="container container-section-3">
+            <h2>Composite parts</h2>
+            <table mat-table [dataSource]="dataComposite">
+                <ng-container matColumnDef="code">
+                    <th mat-header-cell *matHeaderCellDef>Code</th>
+                    <td mat-cell *matCellDef="let element">{{element.code}}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="function">
+                    <th mat-header-cell *matHeaderCellDef>Function</th>
+                    <td mat-cell *matCellDef="let element">{{element.function}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsComposite"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumnsComposite;"></tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="section section-4">
+        <div class="container container-section-4">
+            <h2>Improve parts</h2>
+            <div class="paragraph">
+                Before beginning with our project we make an inventory about what material and equipment we could use
+                through our iGEM experiments, then we noticed that we did not have any instrument to measure GFP to have
+                an idea about relative expression of our constructions. So, we look for other reporter proteins and we
+                find the part BBa_k592025 coding a molecule called Purple-blue chromoprotein amilCP with with B0034 RBS.
+            </div>
+            <div class="paragraph">
+                The construction BBa_K3238005 was made using the biobrick biobrick de la pelB (which is a leader
+                sequence of aminoacids that lead any protein attached with it to periplasmic region) BBa_k592025,
+                BBa_R0010 and B0012, to make a new composite part that allows measure indirectly the expression of our
+                construction regulated by the biobrick BBa_R0010 with naked eyed, without using any specialized
+                instrument.
+            </div>
+            <!-- <img src="" alt=""> -->
+            <div class="paragraph">
+                The biobricks BBa_K3238005 with BBa_k592025 were introduced in a pS1BC3 plasmid to test if the report
+                constructions works adequately. Transformed bacteria was incubated in LB medium with a subsequent
+                addition of IPTG, if the construction works we would expect to see a color change in culture indicating
+                that pelB sequence works like a naked eyed reporter.
+            </div>
+        </div>
+    </section>
+</div>
