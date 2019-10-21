@@ -58,32 +58,32 @@
       .container-section-2 {
         .paragraph {
           text-align: justify;
-          font-size: 17px;
+          font-size: 22px;
           margin: 15px 0;
           font-family: 'Noto Sans', sans-serif;
 
-          &-3,
-          &-6 {
-            margin-left: 25px;
-          }
+          // &-3,
+          // &-6 {
+          //   margin-left: 25px;
+          // }
 
-          &-5 {
-            align-self: flex-end;
-            width: 65%;
-            padding: 10px;
-            border-radius: 8px;
-            background-color: #cecee2;
-            box-shadow: 5px 5px 15px rgb(119, 119, 119);
+          // &-5 {
+          //   align-self: flex-end;
+          //   width: 65%;
+          //   padding: 10px;
+          //   border-radius: 8px;
+          //   background-color: #cecee2;
+          //   box-shadow: 5px 5px 15px rgb(119, 119, 119);
 
-            .wrapped-paragraph {
-              font-size: 24px;
-              text-align: end;
-              margin-top: 50px;
-              padding: 8px;
-              border-bottom: 2px solid rgb(39, 39, 39);
-              border-right: 2px solid rgb(39, 39, 39);
-            }
-          }
+          //   .wrapped-paragraph {
+          //     font-size: 24px;
+          //     text-align: end;
+          //     margin-top: 50px;
+          //     padding: 8px;
+          //     border-bottom: 2px solid rgb(39, 39, 39);
+          //     border-right: 2px solid rgb(39, 39, 39);
+          //   }
+          // }
         }
       }
     }
@@ -130,6 +130,10 @@
                 margin: 10px;
                 width: 85%;
                 height: 45%;
+              }
+
+              .medal {
+                height: 55%;
               }
 
               .text {

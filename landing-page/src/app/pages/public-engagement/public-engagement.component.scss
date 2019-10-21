@@ -1,0 +1,26 @@
+.container-public-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .submenu{
+        width: 20%;
+        height: 100vh;
+        background-color: rgb(155, 155, 155);
+
+        ul{
+
+        }
+    }
+
+    .container {
+        width: 70%;
+        padding: 5%;
+        border: 1px solid red;
+        overflow-y: scroll;
+
+        .section{
+            height: 100vh;
+        }
+    }
+}
