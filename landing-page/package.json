@@ -8,11 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "concat:es-5": "concat -o ./dist/wiki/bundle-es5.js ./dist/landing-page/*.*.js ./dist/landing-page/*.js",
-    "build:prod": "ng build -c production",
-    "build:prod:bundle": "npm run build:prod && npm run concat:es-5",
-    "serve:wiki": "serve dist/wiki",
-    "serve:landing": "serve dist/landing-page"
+    "build:prod": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +44,6 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "concat": "^1.0.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
