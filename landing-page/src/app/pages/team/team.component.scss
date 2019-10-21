@@ -21,6 +21,15 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+
+      .paragraph{
+        text-align: justify;
+        margin: 15px 0;
+      }
+    }
+
+    &-2{
+      height: 100vh;
     }
   }
 }

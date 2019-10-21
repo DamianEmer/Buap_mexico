@@ -1,0 +1,21 @@
+.container-experiments-page{
+    .section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container-section-1{
+            width: 75%;
+            height: 90%;
+            padding: 5% 0;
+
+            mat-list{
+                mat-list-item{
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+    }
+}

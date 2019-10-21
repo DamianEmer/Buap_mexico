@@ -2,7 +2,26 @@
     <h1>TEAM COLLABORATORS</h1>
     <section class="section section-1">
         <div class="container-collaborators">
+            <div class="paragraph">
+                And you, a wonderful team without you this project would not be possible. You always stay here, even in
+                so bad moments. All of you show your amazing support to this crazy project in lab, wiki design, data
+                collection, theoretical development and much more with actions, not words and even you demonstrate that
+                “Si te hundes, me hundo contigo” has a real meaning. Thanks for everything.
+            </div>
             <app-person-card *ngFor="let collaborator of collaborators" [person]="collaborator"></app-person-card>
+        </div>
+    </section>
+
+    <section class="section section-2">
+        <div class="container-collaborators">
+            <!-- <div class="image-collaborator">
+                <img src="../../../assets/images/team/collaborators/cynthia-small.jpg">
+            </div>
+            <div class="image-collaborator">
+                <img src="../../../assets/images/team/collaborators/victor-small.jpg">
+            </div> -->
+
+            <app-person-card *ngFor="let collaborator of externalCollaborators" [person]="collaborator"></app-person-card>
         </div>
     </section>
 </div>

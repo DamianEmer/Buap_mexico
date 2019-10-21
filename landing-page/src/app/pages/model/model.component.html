@@ -30,7 +30,7 @@
                 represses the originally active promoter.
             </div>
 
-            <!-- <img src="" alt=""> -->
+            <img src="../../../assets/images/model/model_diagram_01.svg" width="70%" height="auto">
 
             <div class="container-paragraph">
                 Theoretically toggle design does not require any specialized promoters, whit this in mind we decided to
@@ -51,7 +51,7 @@
                 this phenomenon have not been demonstrated in E. coli.
             </div>
 
-            <!-- <img src="" alt=""> -->
+            <img src="../../../assets/images/model/model_diagram_02.svg" width="70%" height="220px">
 
         </div>
     </section>
@@ -95,7 +95,7 @@
                     Thus, by mass action law, we have the following relations
                 </div>
 
-                <!-- <img src="" alt=""> -->
+                <img src="../../../assets/images/model/formulate-1.JPG" width="35%" height="auto">
 
                 <div class="container-paragraph-formulate">
                     In order to add the dynamics of repressors and inducers, we are going to use the Hill’s equation.
@@ -103,26 +103,38 @@
                     receptor molecule (A). So, we can write the following relation
                 </div>
 
+                <img src="../../../assets/images/model/formulate-2.JPG" width="15%" height="auto">
+
                 <div class="container-paragraph-formulate">
                     Then, by chemical equilibrium,
                 </div>
+
+                <img src="../../../assets/images/model/formulate-3.JPG" width="40%" height="auto">
 
                 <div class="container-paragraph-formulate">
                     Moreover, we can assume a constant number of receptors in order to notice that
                 </div>
 
+                <img src="../../../assets/images/model/formulate-4.JPG" width="25%" height="auto">
+
                 <div class="container-paragraph-formulate">
                     By equations (3) and (4),
                 </div>
+
+                <img src="../../../assets/images/model/formulate-5.JPG" width="20%" height="auto">
 
                 <div class="container-paragraph-formulate">
                     For hence,
                 </div>
 
+                <img src="../../../assets/images/model/formulate-6.JPG" alt="">
+
                 <div class="container-paragraph-formulate">
                     The equation (5) is also known as Hill´s equation. So, putting together the equations (1) and (5),
                     we should obtain the equation (6).
                 </div>
+
+                <img src="../../../assets/images/model/formulate-7.JPG" width="35%" height="auto">
 
                 <div class="container-paragraph-formulate">
                     Now, we can define the final variables for our toggle switch
@@ -132,12 +144,43 @@
                         </li>
                         <li><span>Kpyruvate</span>(dissociation constant for pyruvate inducer)</li>
                         <li><span>Koxygen</span>(dissociation constant for oxygen inducer)</li>
+                        <li><span>Ym = .19 1/min</span>(rate of degradation)</li>
+                        <li><span>Yp = 0.0213 1/min</span>(rate of degradation of protein)</li>
+                        <li><span>N = 2</span>(Hill coeffiecient for a represor)</li>
+                        <li><span>M = (2)</span>(Hill coefficient for an inducer)</li>
+                        <li><span>Ktranscription pdhR</span>(Rate of transcription of pdhR)</li>
+                        <li><span>Ktranscription ArcA</span>(Rate of transcription of ArcA)</li>
+                        <li><span>Ktranslation pdhR</span>(Rate of translation of pdhR)</li>
+                        <li><span>Ktranslation ArcA</span>(Rate of translation of ArcA)</li>
                     </ul>
                 </div>
 
                 <div class="container-paragraph-formulate">
-                    In order to obtain the final equations of toggle switch
+                    These values represent roughly the quantity of molecules from an inducer or repressor to inhibit
+                    another molecule. Moreover, we will assume a constant amount of [DNA]=150 that represents the amount
+                    of copies of DNA in the cell. We need assume a constant rate of transcription of 60 nucleotides per
+                    second and 12 amino acids per second in order to obtain the value of the last undefined four
+                    constants. As well we use that pdhR has 254 amino acids and ArcA has 238 amino acids, and therefore
+                    pdhR has 762 nucleotides and ArcA has 714 nocleotides.
                 </div>
+
+                <div class="images">
+                    <img src="../../../assets/images/model/formulate-8.JPG" width="70%" height="auto">
+                    <img src="../../../assets/images/model/formulate-9.JPG" width="70%" height="auto">
+                </div>
+
+                <div class="container-paragraph-formulate">
+                    So, we obtain the final equations of toggle switch
+                </div>
+
+                <img src="../../../assets/images/model/formulate-10.JPG" width="45%" height="auto">
+
+                <div class="container-paragraph-formulate">
+                    According to the above equations, we model our toggle switch using SimBiolgy, an integrated tool of
+                    MATLAB. First, we create a diagram of the toggle.
+                </div>
+
+                <img src="../../../assets/images/model/formulate-11.JPG" width="45%" height="auto">
             </div>
         </div>
     </section>

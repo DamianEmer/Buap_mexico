@@ -111,6 +111,29 @@ export class TeamComponent implements OnInit {
     }
   ]
 
+  externalCollaborators: Person[] = [
+    {
+      personId: 1,
+      fullname: 'Cynthia Avendaño',
+      picture: '../../../assets/images/team/collaborators/cynthia-small.jpg',
+      career: 'Medical Biotechnology',
+      coriousFact: 'I have an obsession with bags',
+      igem:"I was invited by the student's leader, mostly for my experience in the laboratory",
+      phrase: '',
+      opinion: 'I would give to the Mexican scientific society the importance that actually have. I think that a lot of problems with the science in Mexico comes mostly because people have no idea of what a real scientist do'
+    },
+    {
+      personId: 2,
+      fullname: 'Victor A. Diaz',
+      picture: '../../../assets/images/team/collaborators/victor-small.jpg',
+      career: 'Medical Biotechnology',
+      coriousFact: "I'm afraid of spiders",
+      igem:"Because I'm really interested in synthetic biology. I like to be a mycoplasma pneumonie because it's capable of mimic host cell surface composition and therefore its diagnosis make complicated. So I will stay in my host for a long time.",
+      phrase: '',
+      opinion: 'What I would change about science in my country would be the investment that the government makes to support projects. I think that if the gross domestic product destined to science were greater, we could generate more and better human resources capable of producing quality science.'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {
