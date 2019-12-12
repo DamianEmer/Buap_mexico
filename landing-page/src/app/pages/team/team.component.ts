@@ -115,7 +115,7 @@ export class TeamComponent implements OnInit {
     {
       personId: 1,
       fullname: 'Cynthia Avendaño',
-      picture: '../../../assets/images/team/collaborators/cynthia-small.jpg',
+      picture: '../../../assets/images/team/collaborators/Cinthya_500px.png',
       career: 'Medical Biotechnology',
       coriousFact: 'I have an obsession with bags',
       igem:"I was invited by the student's leader, mostly for my experience in the laboratory",
@@ -125,12 +125,21 @@ export class TeamComponent implements OnInit {
     {
       personId: 2,
       fullname: 'Victor A. Diaz',
-      picture: '../../../assets/images/team/collaborators/victor-small.jpg',
+      picture: '../../../assets/images/team/collaborators/victor_500px.png',
       career: 'Medical Biotechnology',
       coriousFact: "I'm afraid of spiders",
       igem:"Because I'm really interested in synthetic biology. I like to be a mycoplasma pneumonie because it's capable of mimic host cell surface composition and therefore its diagnosis make complicated. So I will stay in my host for a long time.",
       phrase: '',
       opinion: 'What I would change about science in my country would be the investment that the government makes to support projects. I think that if the gross domestic product destined to science were greater, we could generate more and better human resources capable of producing quality science.'
+    },{
+      personId: 3,
+      fullname: 'David Larios',
+      picture: '../../../assets/images/team/collaborators/davidLarios_500px.png',
+      career: '',
+      coriousFact: "",
+      igem:"",
+      phrase: '',
+      opinion: ''
     }
   ]
 
