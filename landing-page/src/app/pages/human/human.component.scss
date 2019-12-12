@@ -1,4 +1,69 @@
+@import '../../../variables.scss';
+
 .container-human-page{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .sidebar-nav{
+        z-index: 999;
+        width: 20%;
+        position: fixed;
+        height: 100vh;
+        top: 45px;
+        left: 0;
+        bottom: 0;
+        background-color: $primary-color;
+        color: $font-white-color;
+
+        .title-sidebar{
+            > * {
+                text-align: left;
+            }
+        }
+
+        .content {
+            width: 90%;
+
+            .block{
+                ul{
+                    list-style: none;
+                    margin-left: 12px;
+
+                    li {
+                        width: 90%;
+                        padding: 5px 5%;
+
+                        > a {
+                            text-decoration: none;
+                            color: #ddd;
+                        }
+
+                        ul {
+                           li:hover {
+                               border-bottom: none;
+                           }
+                        }
+                    }
+
+                    li:hover{
+                        cursor: pointer;
+                        border-bottom: 1px solid #ddd;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .container-info {
+        width: 80%;
+        margin-left: 20%; 
+    }
+
     h1{
         text-align: center;
         margin: 15px 0;
@@ -37,6 +102,25 @@
                 font-size: 17px;
                 line-height: 1.3em;
                 margin: 10px 0;
+            }
+
+            .list-items{
+                padding: 5px;
+                ul{
+                    text-align: justify;
+                    margin-left: 15px;
+
+                    li{
+                        margin: 12px 0;
+                        ol{
+                            margin-left: 25px;
+
+                            li > span {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
