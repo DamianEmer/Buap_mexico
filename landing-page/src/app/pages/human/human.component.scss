@@ -2,13 +2,14 @@
 
 .container-human-page{
 
+    z-index: -2;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
     .sidebar-nav{
-        z-index: 999;
+        z-index: -1;
         width: 20%;
         position: fixed;
         height: 100vh;
